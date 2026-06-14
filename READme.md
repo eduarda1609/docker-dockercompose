@@ -10,9 +10,9 @@ Container é um pacote isolado e leve que junta o seu código com absolutamente 
 
 ## Imagem vs Container
 
-Um container do Docker é um ambiente de runtime com todos os componentes necessários, como código, dependências e bibliotecas, para executar o código da aplicação sem usar dependências da máquina host. Esse runtime de contêiner é executado no mecanismo em um servidor, máquina ou instância de nuvem. O mecanismo opera vários contêineres, dependendo dos atributos subjacentes disponíveis. 
+Um container do Docker é um ambiente de runtime com todos os componentes necessários, como código, dependências e bibliotecas, para executar o código da aplicação sem usar dependências da máquina host. Esse runtime de container é executado no mecanismo em um servidor, máquina ou instância de nuvem. O mecanismo opera vários contêineres, dependendo dos atributos subjacentes disponíveis. 
 
-Uma imagem do Docker, ou imagem de container, é um arquivo executável independente usado para criar um contêiner. Essa imagem de contêiner contém todas as bibliotecas, dependências e arquivos de que o contêiner precisa para ser executado. Uma imagem do Docker é compartilhável e portátil, então você pode implantar a mesma imagem em vários locais ao mesmo tempo, da mesma forma que um arquivo binário de software. 
+Uma imagem do Docker, ou imagem de container, é um arquivo executável independente usado para criar um container. Essa imagem de container contém todas as bibliotecas, dependências e arquivos de que o container precisa para ser executado. Uma imagem do Docker é compartilhável e portátil, então você pode implantar a mesma imagem em vários locais ao mesmo tempo, da mesma forma que um arquivo binário de software. 
 
 Traçando um paralelo com o conceito de orientação a objeto, a imagem é a classe e o container o objeto. A imagem é a abstração da infraestrutura em estado somente leitura, de onde será instanciado o container. Todo container é iniciado a partir de uma imagem, dessa forma podemos concluir que nunca teremos uma imagem em execução. Um container só pode ser iniciado a partir de uma única imagem. Caso deseje um comportamento diferente, será necessário customizar a imagem.
 
@@ -24,7 +24,7 @@ Ao executar o comando docker build, o Docker lê o Dockerfile e utiliza essas in
 
 Abaixo está um exemplo de um Dockerfile ilustrando um pequeno aplicativo escrito em Python
 
-1. Identifica a imagem base (como mencionado no seu texto)
+1. Identifica a imagem base 
 FROM python:3.10-slim
 
 2. Define a pasta de trabalho dentro da nova imagem
