@@ -25,18 +25,23 @@ Ao executar o comando docker build, o Docker lê o Dockerfile e utiliza essas in
 Abaixo está um exemplo de um Dockerfile ilustrando um pequeno aplicativo escrito em Python
 
 1. Identifica a imagem base 
+
 FROM python:3.10-slim
 
 2. Define a pasta de trabalho dentro da nova imagem
+
 WORKDIR /app
 
 3. Copia o código-fonte do seu computador para dentro da imagem
+
 COPY . /app
 
 4. Comandos e instruções que atuam sobre a imagem base
+
 RUN pip install -r dependencias.txt
 
 5. O que o container deve fazer quando for iniciado
+
 CMD ["python", "meu_aplicativo.py"]
 
 ## O que é Docker Compose?
